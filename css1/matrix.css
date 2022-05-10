@@ -1,0 +1,39 @@
+
+img.img1{
+    width: 100px;
+    height: 100px;
+}
+
+table {
+   
+    margin: 100px auto;
+   /* border: 6px solid rgb(0, 0, 0);*/
+  /* background-color: blueviolet;*/
+ 
+
+}
+table td {
+    padding: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+table td a{ text-decoration: none; 
+    color: rgb(255, 255, 255);}
+h1.h3{
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    padding: 30px;
+    text-align: center;
+    margin: 50px auto;
+    border:10px solid black ;
+    width: 70%;
+
+}
+table tr :hover{
+    color: rgb(0, 0, 0);
+    font-size: 42px;
+}
+
+.img1 { border-radius: 50%;}
+.h2{text-align: center;}

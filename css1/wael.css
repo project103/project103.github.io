@@ -1,3 +1,7 @@
+html{
+width:100%;
+
+}
 
 *{
 -webkit-box-sizing: border-box;
@@ -6,14 +10,13 @@ box-sizing: border-box;
 font-family: cursive;
 }
 
-
 body{
     background-image: url(../image/back2.png);
     background-size: 100%;
     object-fit: cover;
     align-items: center;
     background-color: rgb(79, 8, 146);
-    
+    justify-content: center;
 }
 .header{
     padding: 20px;
@@ -98,6 +101,7 @@ li a:hover {
     height: 70px;
     margin: auto;
     padding-right: 5%;
+margin-top:25px;
 }
 .quick-links ul{
     display: flex;
@@ -141,9 +145,7 @@ input[type=text], select , input[type=email] ,input[type=date],input[type=tel] ,
     margin-left: 25%;
     background-color: #b5d3d4;
     padding: 20px;
-    margin: 50px auto;
-
-    
+    margin: 50px auto; 
   }
 .outer-footer{
     padding: 10px;
@@ -153,12 +155,186 @@ input[type=text], select , input[type=email] ,input[type=date],input[type=tel] ,
     background-color:rgb(79, 8, 146);
     padding-right: 90px;
 }
-footer{
+.footer{
+    padding-top: 30px;
     bottom: 0;
+margin-top:500px;
 }
 .my-account{
     background-color: blueviolet;
     align-items: center;
     border: 1px solid rgb(90, 0, 128);
     margin-bottom: 5%;
+}
+/*shop page*/
+.categories{
+    margin: 70px 0;
+}
+.col-4{
+    flex-basis: 25%;
+    min-width: 250px;
+ margin-bottom: 50px;
+padding: 10px;
+transition: transform 0.7s;
+}
+.col-4 img {
+    width: 100%;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    max-height:1080px;
+}
+.title2{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: white;
+    
+}
+.title2::after{
+    content: '';
+    background:#ff523b;
+    width: 80px;
+    height: 5px;
+    border border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50px);
+}
+.col-4 h4{
+    font-weight: normal;
+    color: white;
+
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+.col-4 p{
+    font-size: 20px;
+}
+.pound{
+color:white;
+}
+.col-4:hover{
+    transform: translateY(20px);
+    background-color:#ff523b;
+}
+.dropbtn{
+    background-color: #ff523b;
+    color: white;
+    padding: 12px;
+    font size: 15px;
+    border: none;
+}
+.dropdown{
+    background-color: black;
+    display: inline-block;}
+
+div #mydropdown{
+background-color: black;
+    padding: 15px;
+    display: none;
+}
+.dropdown:hover div #mydropdown{
+    display: block;
+}
+.disc{
+    color: red;
+}
+.product-name{
+color:white;
+font-size:25px;
+}
+.cart-info small{
+color:white;
+font-size:15px
+}
+.disc2{
+    display: none;
+}
+.col-4:hover .disc2{
+    display: block;
+}
+/*cart page*/
+.cart-page{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    max-height:1080px;
+}
+.cart-page table{
+    width:100% ;
+    border-collapse: collapse;
+
+}
+.prc{
+color:white;
+font-size:20px;
+}
+.cart-info{
+    display: flex;
+ flex-wrap:wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: white;
+    background: #ff523b;
+    font font-weight: normal;
+}
+td img{
+    height: 80px;
+    width: 80px;
+margin-right: 10px;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #ff523b;
+    font-size: 12px;
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+color:white;
+}
+.total-price table {
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 420px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+.buy-btn{
+    display:inline-block;
+    font-size: 20px;
+    background-color:#ff523b ;
+    color: white;
+    border: none;
+    width: 90px;
+    height:45px;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.buy-btn:hover{
+    background-color:darkred;
 }
