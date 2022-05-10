@@ -7,155 +7,107 @@ body{
     font-family: "Open-Sans" , sans-serif;
     background-color: rgb(56, 4, 94);
 }
-.header{
-    padding: 20px;
-    margin-left: 5px;
-}
-.links{
-    position: absolute;}
-.links ul{
-    list-style: none;
-   text-align: center;
-    background-color: #c5c5c5;
-    position: fixed;
-    border: 4px;
-    min-width: 100px;
-    top: calc(100%+ 15px);
-    display:none;
-    transition: 0.5s;
-}
-.links:hover ul{
-    display: block;
-}
-.links a{
-    text-decoration: none;
-    transition: 0.5s;
-    font-family: cursive;
-    margin: 5px; 
-    display: block;
-    padding: 8px;
-    color: #442ec0;
-}
-li a:hover {
-    transition: 0.5s;
-    color: rgb(0, 0, 0);
-    padding-left: 30px;
-    display: block;
-  }
-  .links ul::before{
-      content: "";
-      border: 10px solid;
-      border-color: transparent transparent rgb(212, 204, 204) transparent;
-      position: absolute;
-      right: 86%;
-      top: -20px;
-  }
- .links ul li:not(:last-child) a{
-     border-bottom: 2px solid rgb(212, 204, 204);
- }
- img.img{
-    width: 60%;
-     height: 100px;
-     padding-left: 35%;
-     top: 0;
- }
- .inner-footer{
-    margin: 0%;
-    padding: 0%;
-    background-color:rgb(56, 4, 94);
-}
-.social-links{
-    display: flex;
-}
-.social-links ul{
-    padding: 10px;
-    padding-right: 60px;
-    display: flex;
-    width: 400px;
-    height: 30px;
-    margin: auto;
-}
-.social-items{
+ul{
     list-style: none;
 }
-.social-items a{
-    padding: 10px 20px;
-    font-size: 30px;
-    color:#6cccc6;
-    float: center;
-}
-.quick-links{
-    display: flex;
-    width: 560px;
-    height: 70px;
-    margin: auto;
-    padding-right: 5%;
-}
-.quick-links ul{
-    display: flex;
-}
-.quick-items{
-    list-style: none;
-}
-.quick-items a{
-    text-decoration:none ;
-    padding: 10px 15px;
-    font-size: 20px;
-    color:white;
-    transition: 0.25s;
-}
-.quick-items a:hover{
-    color: #6cccc6;
-}
-input[type=text], select , input[type=email] ,input[type=date],input[type=tel] , input[type=password]{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-  }
-  input[type=submit] {
-    width: 50%;
-    background-color: #000000;
-    color: white;
-    padding: 14px 20px;
-    margin-left: 25%;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  fieldset {
-    border-radius: 5px;
-    width: 50%;
-    margin-left: 25%;
-    background-color: #b5d3d4;
-    padding: 20px;
-    margin: 50px auto;
-
+.container{
     
-  }
-.outer-footer{
-    padding: 10px;
-    text-align: center;
-    color: #fff;
-    font-size: 18px;
-    background-color:rgb(79, 8, 146);
-    padding-right: 90px;
+    padding-left: 0px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
-footer{
+nav{
+    flex: 1;
+}
+header{
+
+    height: 100px;
+    -webkit-background-size:cover ;
+    background-size: cover;
+    background-position: center center;
+    position:relative ;
+}
+header .container::after{
+    content: "";
+    background-color: #fff;
     bottom: 0;
+    position: absolute;
+    height: 1px;
+    width:calc( 100% - 85px);
 }
-.my-account{
-    background-color: blueviolet;
-    align-items: center;
-    border: 1px solid rgb(90, 0, 128);
-    margin-bottom: 5%;
+.nav-area{
+    float:right;
+    list-style: none;
+    margin-top: 50px;
+}
+.nav-area li{
+    display: inline-block;
+}
+.nav-area li a{
+    color:#fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family:poppins;
+    font-size:14px;
+}
+.nav-area li a:hover{
+    background: #fff;
+    color: #333;
+    transition: all 0.8s;
+    border-radius: 40px;
+}
+.logo img{
+    background-color: #fff;
+    float:left;
+    height: 100px;
+    border-radius: 30px;
+}
+.box-container {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
 }
 
+.footer {
+    background-color: rgb(8, 28, 88);
+}
 
+.footer .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+}
+.footer .box-container .box {
+    padding: 1rem 0px;
+    flex: 1 1 25rem;
+}
+.footer .box-container .box h3 {
+    color: rgba(213, 205, 205, 0.83);
+    padding: 10px;
+}
+.footer .box-container .box a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    display: block;
+    padding: 10px;
+}
+.number{
+    color: white;
+}
+
+.footer .box-container .box a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+.footer h2 {
+color: white;
+background-color:rgb(7, 33, 112);
+padding: 10px 0px;
+width: 100%;
+}
 .wrapper {
     min-height: 100vh;
     background-repeat: no-repeat;

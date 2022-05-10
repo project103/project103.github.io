@@ -18,9 +18,11 @@ body{
 .header{
     padding: 20px;
     margin-left: 5px;
+    z-index: 999;
 }
 .links{
-    position: absolute;}
+    position: absolute;
+    z-index: 999;}
 .links ul{
     list-style: none;
    text-align: center;
@@ -28,6 +30,7 @@ body{
     position: fixed;
     border: 4px;
     min-width: 100px;
+    z-index: 999;
     top: calc(100%+ 15px);
     display:none;
     transition: 0.5s;
