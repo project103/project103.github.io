@@ -281,4 +281,9 @@ th:last-child{
 .buy-btn:hover{
 	background-color:darkred;
 }
+.original{
+margin: 0px;
+margin-top:15px;
+
+}
 
