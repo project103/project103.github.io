@@ -1,0 +1,43 @@
+body {
+  font-family: sans-serif;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #212529;
+  position: relative;
+  padding-bottom: 30px;
+  margin: 30px 30px;
+}
+img {
+  border-radius: 8px;
+ padding: 10px;
+  float: left;
+  height: 500px;
+  width: 500px;
+}
+img:hover {
+  transform: scale(1.06);
+  transition: 0.5s;
+}
+p {
+  font-size: 23px;
+  font-weight: 530;
+  color: #000000;
+  position: absolute;
+  top: 500px;
+  left: 0;
+  border-radius: 8px;
+  padding: 10px 10px;
+}
+p:hover {
+  transform: scale(1.04);
+  transition: 0.5s;
+  background-color: #212529c6;
+}
+h1 {
+  color: #000000;
+  margin-bottom: 90px auto;
+}
+h5 {
+  font-size: 30px;
+  color: #000000;
+}
