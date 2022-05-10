@@ -76,9 +76,11 @@ li a:hover {
     display: flex;
 }
 .social-links ul{
+    padding: 10px;
     padding-right: 60px;
     display: flex;
     width: 400px;
+    height: 30px;
     margin: auto;
 }
 .social-items{
